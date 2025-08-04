@@ -1,8 +1,6 @@
 # Sensor de temperatura e umidade 
 
-<center> 
-  <p>Implementação de um leitor de temperatura e umidade utilizando o sensor AHT10 utilizando pico SDK. </p> 
-</center>
+<p align='center'>Implementação de um leitor de temperatura e umidade utilizando o sensor AHT10 utilizando pico SDK. </p> 
 
 ## Pinos utilizados 
 
