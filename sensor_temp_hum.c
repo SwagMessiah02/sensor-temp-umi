@@ -115,12 +115,12 @@ void exibir_dados(float temperatura, float umidade) {
 
     st7789_clear();
 
-    if(temperatura >= 30.0 && umidade >= 44.0) {
-      st7789_draw_text(20, 205, "TEMPERATURA ALTA", COLOR_RED, COLOR_BLACK, 2);
-      st7789_draw_text(40, 180, "UMIDADE BAIXA", COLOR_RED, COLOR_BLACK, 2);
-    } else if(temperatura >= 30.0) {
-      st7789_draw_text(20, 205, "TEMPERATURA ALTA", COLOR_RED, COLOR_BLACK, 2);
-    } else if(umidade >= 44.0) {
+    if(temperatura <= 20.0 && umidade >= 70.0) {
+      st7789_draw_text(20, 205, "TEMPERATURA BAIXA", COLOR_RED, COLOR_BLACK, 2);
+      st7789_draw_text(40, 180, "UMIDADE ALTA", COLOR_RED, COLOR_BLACK, 2);
+    } else if(temperatura <= 20.0) {
+      st7789_draw_text(20, 205, "TEMPERATURA BAIXA", COLOR_RED, COLOR_BLACK, 2);
+    } else if(umidade >= 70.0) {
       st7789_draw_text(40, 180, "UMIDADE ALTA", COLOR_RED, COLOR_BLACK, 2);
     }
 
